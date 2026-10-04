@@ -1,0 +1,32 @@
+{
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "prompt": "متن روی جلد را بررسی کن و فقط عنوان کامل کتاب را بنویس. عنوان کامل شامل عنوان اصلی و زیرعنوان مرتبط است؛ حتی اگر در چند خط، اندازه متفاوت یا کادرهای جدا نوشته شده باشند، آن‌ها را به ترتیب از بالا به پایین ترکیب کن. نام نویسنده، مترجم، گردآورنده، ناشر، نوبت چاپ و عبارت‌هایی مانند چاپ اول یا چاپ دوم را حذف کن. متن را دقیقاً به همان زبان و املای روی جلد بنویس؛ ترجمه، اصلاح، تکمیل و حدس‌زدن ممنوع است. فقط یک خط و بدون توضیح یا گیومه پاسخ بده.",
+  "train_samples": 1000,
+  "test_samples": 200,
+  "baseline": {
+    "raw_exact_match": 0.045,
+    "normalized_exact_match": 0.05,
+    "levenshtein_similarity": 0.4799716297955613,
+    "word_f1": 0.3402183963911905
+  },
+  "fine_tuned": {
+    "raw_exact_match": 0.14,
+    "normalized_exact_match": 0.14,
+    "levenshtein_similarity": 0.6016429677046379,
+    "word_f1": 0.4457058453529042
+  },
+  "change": {
+    "raw_exact_match": 0.09500000000000001,
+    "normalized_exact_match": 0.09000000000000001,
+    "levenshtein_similarity": 0.12167133790907658,
+    "word_f1": 0.10548744896171369
+  },
+  "training": {
+    "train_runtime": 7205.2119,
+    "train_samples_per_second": 0.278,
+    "train_steps_per_second": 0.035,
+    "total_flos": 3.096570570596352e+16,
+    "train_loss": 0.6726346225738525,
+    "epoch": 2.0
+  }
+}
